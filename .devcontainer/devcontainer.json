@@ -1,0 +1,15 @@
+{
+  "name": "My C++ Codespace",  // 自定义环境名称
+  "image": "mcr.microsoft.com/devcontainers/cpp:latest",  // 使用官方预装 GCC 的镜像
+  "features": {
+    "gcc": {
+      "version": "latest"  // 确保安装最新版 GCC
+    }
+  },
+  "postCreateCommand": "gcc --version && echo 'Compiler ready!'",  // 可选：创建后验证
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools"]  // 可选：安装 C++ 扩展
+    }
+  }
+}
